@@ -28,11 +28,14 @@
       padding: 1rem 2rem;
       box-shadow: 0 2px 8px rgba(48,25,52,0.4);
     }
-    nav .logo {
-      font-size: 1.8rem;
-      font-weight: bold;
-      letter-spacing: 2px;
-      color: var(--purple-light);
+    .logo-image {
+      height: 54px;
+      width: auto;
+      margin-right: 1.1rem;
+      border-radius: 8px;
+      background: var(--purple-dark);
+      box-shadow: 0 2px 8px rgba(160,89,247,0.06);
+      object-fit: contain;
     }
     nav ul {
       list-style: none;
@@ -77,6 +80,12 @@
       text-align: center;
       transition: transform 0.18s, box-shadow 0.18s;
       border: 2px solid transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 1.2rem;
+      min-height: 320px;
+      justify-content: flex-end;
     }
     .artwork-card:hover {
       transform: translateY(-8px) scale(1.03);
@@ -89,22 +98,23 @@
       object-fit: cover;
       background: var(--purple-light);
       display: block;
+      border-bottom: 1px solid var(--purple-light);
     }
     .artwork-title {
-      margin: 1rem 0 0.5rem;
-      font-size: 1.24rem;
+      margin: 1rem 0 0.3rem;
+      font-size: 1.21rem;
       color: var(--card-highlight);
-    }
-    .artwork-desc {
-      font-size: 1rem;
-      color: var(--text-light);
-      padding: 0 0.6rem 1.2rem;
+      font-weight: 600;
+      text-shadow: 0px 2px 8px #2d1833d6;
+      letter-spacing: 0.5px;
+      text-transform: capitalize;
     }
     @media (max-width: 700px) {
       nav {
         flex-direction: column;
         gap:0.5rem;
       }
+      .logo-image { margin-bottom: 1rem;}
       h1 {
         font-size: 1.25rem;
       }
@@ -113,7 +123,7 @@
 </head>
 <body>
   <nav>
-    <div class="logo">Art Portfolio</div>
+    <img src="logo.png" alt="Portfolio Logo" class="logo-image">
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">Gallery</a></li>
@@ -125,34 +135,28 @@
     <h1>Welcome to My Art Portfolio</h1>
     <div class="artworks">
       <div class="artwork-card">
-        <img src="collage.jpg" alt="Digital Collage">
-        <div class="artwork-title">Digital Collage</div>
-        <div class="artwork-desc">A dynamic composition blending various images and visual motifs into a single, cohesive digital artwork.</div>
+        <img src="collage.jpg" alt="Collage">
+        <div class="artwork-title">Collage</div>
       </div>
       <div class="artwork-card">
-        <img src="glitch.jpg" alt="Glitch Art">
-        <div class="artwork-title">Glitch Art</div>
-        <div class="artwork-desc">Experimental digital art using deliberate distortion and vibrant color interruptions to challenge visual expectations.</div>
+        <img src="glitch.jpg" alt="Glitch">
+        <div class="artwork-title">Glitch</div>
       </div>
       <div class="artwork-card">
-        <img src="logo.png" alt="Portfolio Logo">
-        <div class="artwork-title">Portfolio Logo</div>
-        <div class="artwork-desc">The signature logo representing the portfolio and its style, designed with unique graphic clarity.</div>
+        <img src="logo.png" alt="Logo">
+        <div class="artwork-title">Logo</div>
       </div>
       <div class="artwork-card">
-        <img src="render.png" alt="3D Render">
-        <div class="artwork-title">3D Render</div>
-        <div class="artwork-desc">A realistic or stylized three-dimensional digital render, showcasing technical and creative modeling skills.</div>
+        <img src="render.png" alt="Render">
+        <div class="artwork-title">Render</div>
       </div>
       <div class="artwork-card">
-        <img src="space.jpg" alt="Outer Space">
-        <div class="artwork-title">Outer Space</div>
-        <div class="artwork-desc">A digital artwork inspired by the cosmic vastness of space, stars, nebulae, or celestial scenes.</div>
+        <img src="space.jpg" alt="Space">
+        <div class="artwork-title">Space</div>
       </div>
       <div class="artwork-card">
-        <img src="war.jpg" alt="Echoes of War">
-        <div class="artwork-title">Echoes of War</div>
-        <div class="artwork-desc">A powerful piece addressing the impact and intensity of conflict, rendered with emotional and visual depth.</div>
+        <img src="war.jpg" alt="War">
+        <div class="artwork-title">War</div>
       </div>
     </div>
   </div>
