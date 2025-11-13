@@ -9,7 +9,6 @@
       --purple-dark: #301934;
       --purple-light: #a259f7;
       --text-light: #ede9f9;
-      --card-bg: #49206a;
       --card-highlight: #d1b3ff;
       --nav-bg: #000000;
     }
@@ -62,12 +61,6 @@
       margin: 2rem auto;
       padding: 0 1rem;
     }
-    h1 {
-      text-align: center;
-      margin-bottom: 1.5rem;
-      font-size: 2.3rem;
-      color: var(--card-highlight);
-    }
     .artworks {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -79,7 +72,7 @@
       background: transparent;
       border: none;
       box-shadow: none;
-      border-radius: 0; /* Sharp edges */
+      border-radius: 0;
       padding: 0;
       display: flex;
       flex-direction: column;
@@ -92,10 +85,10 @@
       width: 120px;
       height: 120px;
       border: 2px solid #000;
-      border-radius: 0; /* Sharp corners */
+      border-radius: 0;
       background: none;
       margin: 0 auto;
-      transition: transform 0.15s;
+      transition: transform 0.15s, border-color 0.15s;
       overflow: hidden;
       box-sizing: border-box;
     }
@@ -119,13 +112,11 @@
       font-size: 1.03rem;
       color: var(--card-highlight);
       font-weight: 600;
-      text-shadow: none;
       letter-spacing: 0.5px;
       text-transform: capitalize;
       text-align: center;
       background: none;
       border-radius: 0;
-      /* No obstruction of the image! */
     }
     @media (max-width: 700px) {
       nav {
@@ -133,9 +124,6 @@
         gap:0.5rem;
       }
       .logo-image { margin-bottom: 1rem;}
-      h1 {
-        font-size: 1.25rem;
-      }
       .artwork-card { width: 46vw; }
       .artwork-thumb-link { width: 42vw; height: 42vw; }
     }
@@ -150,7 +138,6 @@
     </ul>
   </nav>
   <div class="container">
-    <h1>Welcome to My Art Portfolio</h1>
     <div class="artworks">
       <!-- Logo -->
       <div class="artwork-card">
