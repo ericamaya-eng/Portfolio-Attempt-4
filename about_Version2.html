@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | My Art Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #301934 60%, #a259f7 100%);
+      color: #ede9f9;
+      min-height: 100vh;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    .navbar {
+      background: #000 !important;
+      box-shadow: 0 2px 8px rgba(48,25,52,0.4);
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: #d1b3ff !important;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+    }
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+      color: #a259f7 !important;
+    }
+    .logo-image {
+      height: 64px;
+      width: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(160,89,247,0.15);
+      object-fit: contain;
+      margin-right: 8px;
+      background: #301934;
+    }
+    .about-card {
+      background: rgba(48, 25, 52, 0.88);
+      border-radius: 18px;
+      color: #ede9f9;
+      padding: 2.5rem 2.2rem 1.8rem 2.2rem;
+      margin-top: 3rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 6px 28px 0 rgba(160,89,247,0.14);
+      max-width: 600px;
+    }
+    .about-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2rem;
+      border-radius: 18px;
+      max-width: 370px;
+      width: 100%;
+      box-shadow: 0 3px 16px 0 rgba(160,89,247,0.15);
+      border: 2px solid #a259f7;
+      background: #22112b;
+      object-fit: cover;
+    }
+    .about-desc {
+      color: #ede9f9;
+      font-size: 1.14rem;
+      text-align: center;
+      white-space: pre-line;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    @media (max-width: 767.98px) {
+      .about-card { padding: 1.3rem 0.5rem 1rem 0.5rem; }
+      .logo-image { height: 44px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="logo.png" alt="Portfolio Logo" class="logo-image">
+        <span>Portfolio</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- About content -->
+  <div class="container">
+    <div class="about-card mx-auto">
+      <img src="IMG_4649.jpg" class="about-img" alt="Eric Amaya">
+      <div class="about-desc">
+Eric Amaya’s work is characterized by a cartoony and exaggerated style, complemented by quick representational pieces depicting landscapes and still life.
+
+His chosen mediums include graphite-based sketch line art, conté and charcoal line art, and oil paints. He also occasionally explores digital media and has a growing interest in 3D graphics and music production.
+
+Amaya’s primary motivation stems from a desire to bring his ideas to life on paper. His artwork is vibrant and pop-inspired, often reflecting the aesthetic and energy of video games, particularly those in the indie scene and titles geared toward younger audiences aged 6 to 12. In contrast, his representational works draw influence from the Impressionist movement.
+
+Amaya takes pride in his ability to create fun, dynamic caricatures that resonate with a wide audience, as well as essential representational artworks that connect with an even broader range of viewers.
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
